@@ -1,0 +1,91 @@
+body {
+  max-width: 1440px;
+  height: 100%;
+  margin: 0;
+}
+
+.row {
+  display: flex;
+  position: relative;
+  margin: 20% 10% 0% 15%;
+  height: 100%;
+  bottom: -100px;
+  left: 100px;
+
+
+}
+
+.column1 , .column2 , .column3 {
+  position: relative;
+  background-image: url(images/icon-sedans.svg), url(images/icon-luxury.svg), url(images/icon-suvs.svg);
+  background-repeat: no-repeat;
+  background-position: 40px 40px;
+  flex-wrap: wrap;
+  flex: 3;
+  padding: 40px;
+  padding-bottom: 0;
+  height: 25rem;
+
+
+}
+
+.column1 {
+  background-color: hsl(31, 77%, 52%);
+}
+
+.column2 {
+  background-color: hsl(184, 100%, 22%);
+
+}
+
+.column3 {
+  background-color: hsl(179, 100%, 13%);
+
+}
+
+h1 {
+  font-family:  Big Shoulders Display, sans-serif;
+  color:  hsl(0, 0%, 95%);
+  text-transform: uppercase;
+  margin-top: 50px;
+}
+
+p {
+  color: hsla(0, 0%, 100%, 0.75);
+  font-family: Lexand Deca, sans-serif;
+  line-height: 30px;
+  font-size: 1rem;
+}
+
+.button {
+  position: absolute;
+  bottom: 10px;
+}
+
+button {
+  background-color: hsl(0, 0%, 100%, 0.75);
+  height: 50px;
+  width: 150px;
+  border-radius: 20px;
+}
+
+.button:hover {
+  background-color: hsl(0, 0%, 95%);
+  border-radius: 20px;
+}
+
+@media (max-width: 1000px) {
+
+  .row {
+    display: initial;
+    left:initial;
+    }
+
+  .column1 , .column2 , .column3 {
+    background-position: 40px 40px;
+    }
+
+  button {
+  width: 300px;
+    }
+  }
